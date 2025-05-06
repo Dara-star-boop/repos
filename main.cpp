@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-	int n, sum=0,i=0;
+	int n,sum=0,i=0,x;
 	int *nums;
 	cout << "vuvedete broi elementi: ";
 	cin >> n;
@@ -18,10 +18,13 @@ int main() {
 		cin >> nums[i];
 		i++;
 	}
+	cout << "Vuvedete chisloto X ";
+	cin >> x;
+	
 	for (i = 0; i < n; i++) {
-		if (nums[i] > 0) {
-			sum = nums[i] + sum;
+		if (nums[i]==x) {
+			sum++;
 		}
 	}
-	cout << "Sumata e " << sum;
+	cout << "Chisloto X se sreshta " << sum<<" puti";
 }
